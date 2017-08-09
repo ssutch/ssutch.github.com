@@ -2,6 +2,7 @@
 <head>
 	<title>Samuel Sutch</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<style>
 		* {
 			font-family: 'Open Sans', sans-serif;
@@ -21,7 +22,10 @@
 		}
 		body {
 			max-width: 800px;
-			margin: 50px auto;
+			margin: 25px auto;
+		}
+		body > * { 
+			padding: 0 25px;
 		}
 		header {
 			display: flex;
@@ -74,6 +78,9 @@
 			font-style: italic;
 			font-size: .85em;
 		}
+		.role .details .h3 {
+			text-transform: uppercase;
+		}
 		.social-media {
 			margin-top: 25px;
 			margin-left: -10px;
@@ -81,6 +88,18 @@
 		.social-media a {
 			display: inline-block;
 			margin-left: 10px;
+		}
+		@media only screen and (max-width: 480px) {
+			.role {
+				flex-direction: column;
+			}
+			.role .logo {
+				margin-top: 5px;
+				margin-bottom: 15px;
+			}
+			.role .details {
+				margin-left: 0;
+			}
 		}
 	</style>
 	<meta name="twitter:card" content="summary" />
