@@ -1,314 +1,439 @@
 <html>
 <head>
-	<title>Samuel Sutch</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<style>
-		* {
-			font-family: 'Open Sans', sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		p, ul {
-			margin-bottom: 15px;
-		}
-		ul li {
-			margin-left: 20px;
-		}
-		a {
-			color: inherit;
-			text-decoration: none;
-			font-weight: bold;
-		}
-		body {
-			max-width: 800px;
-			margin: 25px auto;
-		}
-		body > * { 
-			padding: 0 25px;
-		}
-		header {
-			display: flex;
-			height: 100px;
-		}
-		header .portrait {
-			display: flex;
-			align-items: center;
-		}
-		header .portrait img {
-			max-width: 75px;
-			border-radius: 50%;
-		}
-		header .name-title {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			margin-left: 25px;
-		}
-		header .name-title h1 {
-			font-weight: 100;
-		}
-		header .name-title h2 {
-			font-weight: 100;
-			font-size: 1em;
-		}
-		.role {
-			display: flex;
-		}
-		.role .logo {
-			width: 100px;
-		}
-		.role .logo img {
-			max-width: 100px;
-		}
-		.role .details {
-			margin-left: 25px;
-		}
-		section + h2, header + h2 { 
-			margin: 25px 0;
-		}
-		.role .details > * {
-			margin-bottom: 5px;
-		}
-		.role .details h4 {
-			font-weight: 800;
-		}
-		.role .details .duration {
-			font-weight: 100;
-			font-style: italic;
-			font-size: .85em;
-		}
-		.role .details .h3 {
-			text-transform: uppercase;
-		}
-		.social-media {
-			margin-top: 25px;
-			margin-left: -10px;
-		}
-		.social-media a {
-			display: inline-block;
-			margin-left: 10px;
-		}
-		@media only screen and (max-width: 480px) {
-			.role {
-				flex-direction: column;
-			}
-			.role .logo {
-				margin-top: 5px;
-				margin-bottom: 15px;
-			}
-			.role .details {
-				margin-left: 0;
-			}
-		}
-	</style>
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:site" content="@ssutch" />
-	<meta name="twitter:creator" content="@ssutch" />
-	<meta property="og:title" content="Samuel Sutch - Technology Leader and Generalist" />
-	<meta property="og:url" content="http://sam.sutch.net" />
-	<meta property="og:type" content="business" />
-	<meta property="og:description" content="Serial entrepreneur in mobile and cryptocurrency. Crafting life-changing mobile experiences for over a decade." />
-	<meta property="og:image" content="http://sam.sutch.net/sam-sutch.jpg" />
+    <title>Samuel Sutch</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <style>
+        * {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        p, ul {
+            margin-bottom: 15px;
+        }
+
+        ul li {
+            margin-left: 20px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px solid transparent;
+        }
+
+        a:hover {
+            border-bottom: 1px solid black;
+        }
+
+        a:after {
+            display: inline-block;
+            content: ' ';
+            background-image: url('./iconmonstr-arrow-3.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 2.5ex;
+            width: 2.5ex;
+            background-size: 2ex;
+            margin-left: 1pt;
+            vertical-align: text-bottom;
+        }
+
+        body {
+            max-width: 800px;
+            margin: 25px auto;
+        }
+
+        body > * {
+            padding: 0 25px;
+        }
+
+        header {
+            display: flex;
+            height: 100px;
+        }
+
+        header .portrait {
+            display: flex;
+            align-items: center;
+        }
+
+        header .portrait img {
+            max-width: 75px;
+            border-radius: 50%;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+        }
+
+        header .name-title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 25px;
+        }
+
+        header .name-title h1 {
+            font-weight: 100;
+        }
+
+        header .name-title h2 {
+            font-weight: 100;
+            font-size: 1em;
+        }
+
+        .role {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .role .logo {
+            width: 100px;
+            padding-top: 12px;
+        }
+
+        .role .logo img {
+            max-width: 100px;
+        }
+
+        .role .details {
+            margin-left: 25px;
+        }
+
+        .role .details.nologo {
+            margin-left: 125px;
+        }
+
+        section + h2, header + h2 {
+            margin: 25px 0;
+        }
+
+        .role .details > * {
+            margin-bottom: 5px;
+        }
+
+        .role .details h4 {
+            font-weight: 800;
+        }
+
+        .role .details .duration {
+            font-weight: 100;
+            font-style: italic;
+            font-size: .85em;
+        }
+
+        .social-media {
+            margin-top: 25px;
+            margin-left: -10px;
+        }
+
+        .social-media a {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .social-media a:after {
+            display: inline;
+            background: none;
+            content: '';
+        }
+
+        .history {
+            display: flex;
+            flex-direction: row;
+            margin: 15px 0;
+        }
+
+        .history .bar {
+            background: rgba(0,0,0,.2);
+            height: 1px;
+            flex-grow: 1;
+            margin: 1.1ex 0;
+        }
+
+        .history h4 {
+            margin: 0 2ex;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .role {
+                flex-direction: column;
+            }
+
+            .role .logo {
+                margin-top: 5px;
+                margin-bottom: 15px;
+            }
+
+            .role .details {
+                margin-left: 0;
+            }
+        }
+    </style>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@samuelsutch"/>
+    <meta name="twitter:creator" content="@samuelsutch"/>
+    <meta property="og:title" content="Samuel Sutch - Technology Leader and Generalist"/>
+    <meta property="og:url" content="http://sam.sutch.net"/>
+    <meta property="og:type" content="business"/>
+    <meta property="og:description"
+          content="Serial entrepreneur in mobile and cryptocurrency. Crafting life-changing mobile experiences for over a decade."/>
+    <meta property="og:image" content="http://sam.sutch.net/sam-sutch.jpg"/>
 </head>
 <body>
-	<header>
-		<div class="portrait"><img src="/sam-sutch.jpg"></div>
-		<div class="name-title">
-			<h1>Samuel Sutch</h1>
-			<h2>Technology Leader and Generalist</h2>
-		</div>
-	</header>
-	<section class="social-media">
-		<a href="https://twitter.com/ssutch" target="_blank">
-			<img src="iconmonstr-twitter-3.svg">
-		</a>
-		<a href="https://github.com/samuraisam" target="_blank">
-			<img src="iconmonstr-github-3.svg">
-		</a>
-		<a href="https://www.instagram.com/ssutch/" target="_blank">
-			<img src="iconmonstr-instagram-6.svg">
-		</a>
-		<a href="https://linkedin.com/in/ssutch" target="_blank">
-			<img src="iconmonstr-linkedin-3.svg">
-		</a>
-	</section>
-	<h2>About</h2>
-	<section class="intro">
-		<p>
-			Welcome! You've reached my personal page where I hope to describe who I 
-			am and what makes me tick.
-		</p>
-		
-		<p>
-			For the past 15 years I've focused on 
-			bringing life-changing mobile experiences to people through my extensive programming
-			experience and leadership skills. Most recently I've been focused on defining products 
-			and building world-class teams as the CTO of various companies.
-		</p>
-	</section>
-	<h2>Recent Projects</h2>
-	<section class="experience">
-		<div class="role">
-			<div class="logo">
-				<img src="/bread-logo.png">
-			</div>
-			<div class="details">
-				<h3><a href="https://breadwallet.com" target="_blank">Bread AG</a></h3>
-				<h4>CTO <span class="duration">September 2015-Current</span></h4>
-				<div class="description">
-					<p>
-						Bread AG (formerlly breadwallet LLC) is a cryptocurrency startup.
-						As CTO, I am responsible for carrying out the product vision for the company.
-					</p>
-					<ul>
-						<li>Building out the engineering team. Currently 9 strong</li>
-						<li>Defining and executing the technolgy roadmap</li>
-						<li>Providing useful business metrics and telemetry data</li>
-						<li>Manage security for 100s of millions of dollars of bitcoin</li>
-					</ul>
-					<p>
-						As the first senior engineer at the company, I was tasked with defining our
-						technology stack for years to come. For Bread's infrastructure I chose a swarm 
-						of microservices written in Go and hosted on GKE (Google Kubernetes Engine).
-						For our frontend technolgy I managed the development of iOS and Android native
-						apps, and created an in-house HTML5 platform which dramatically 
-						improved our turn around time for high-iteration products like our exchange product.
-					</p>
-					<ul>
-						<li>Built out a HTML5 platform that allows for live app updates</li>
-						<li>Stable and secure backend infrastructure with 9-second deploys to production</li>
-						<li>Fast developer on-boarding, everyone makes a commit their first day</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="role">
-			<div class="logo">
-				<img src="/making-friends.png">
-			</div>
-			<div class="details">
-				<h3><a href="http://makingfriendsapp.com" target="_blank">Making Friends Inc.</a></h3>
-				<h4>Co-Founder, CTO <span class="duration">March 2013-September 2015</span></h4>
-				<h4><span class="duration">Acqui-hired in 2015</span></h4>
-				<div class="description">
-					<p>
-						Making Friends' mission was to dramatically improve the quality and effectiveness
-						of autism care services. We started in 2013 with an iPad game focused on teaching
-						social skills to kids on the medium-high autistic spectrum. In 2014 we pivoted
-						into a patient management platform as we learned more about the space. In 2015 our
-						staff and product was acquired by Nightingale.
-					</p>
-					<ul>
-						<li>Lead development of mobile iPad game</li>
-						<li>Created highly configurable patient management platform with dynamic content types, 
-							governed by a dynamic roles and permissions system</li>
-						<li>Majority investor, providing funding for development, business, marketing, and legal</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="role">
-			<div class="logo">
-				<img src="/lightt-logo.png">
-			</div>
-			<div class="details">
-				<h3>Lightt Inc</h3>
-				<h4>Co-Founder, CTO <span class="duration">May 2011-March 2013</span></h4>
-				<h4><span class="duration">Acquired by Mitu in 2014</span></h4>
-				<div class="description">
-					<p>
-						Lightt began as the manifestation of my desire to create a moving,
-						daily portrait of mine and my friends life. In a way, it is sort of the 
-						ancestor to Snapchat and Instagram Stories. It was a video capture
-						and consuption application that allowed you to capture short segments
-						that became part of an infite timeline you could jump into at any time.
-					</p>
-					<p>
-						It was acquired in 2014 and shuttered in 2015. You can still
-						<a href="https://www.youtube.com/watch?v=a-sekZYj1oo">see videos of it youtube.
-					</a>
-					<ul>
-						<li>Product creation and vision from the beginning</li>
-						<li>Raised a $1M seed round on MVP</li>
-						<li>Built an engineering and product team</li>
-						<li>Flawless day-1 launch with hundreds-of-thousands of downloads</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="role">
-			<div class="logo">
-				<img src="/steamboat-logo.png">
-			</div>
-			<div class="details">
-				<h3>Steamboat Labs LLC</h3>
-				<h4>Founder, CEO <span class="duration">May 2009-June 2016</span></h4>
-				<div class="description">
-					<p>
-						Steamboat Labs is a technology botique specializing in building MVP products for
-						entrepreneurs. We've built companies that started as sketches on bar napkins as well
-						as provided mission-critical technology for Fortune 50 companies, and nearly 
-						everything in-between.
-					</p>
-					<ul>
-						<li>Booked over US $1M/yr in business</li>
-						<li>Notable clients include Intel, Microsoft, and Google, among many others</li>
-						<li>Defining product, and hiring teams for startups</li>
-						<li>Built MVPs for many well-known products and companies</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="role">
-			<div class="logo">
-				<img src="/yammer-logo.png">
-			</div>
-			<div class="details">
-				<h3><a href="https://yammer.com" target="_blank">Yammer Inc.</a></h3>
-				<h4>Lead Mobile Engineer <span class="duration">May 2010-June 2011</span></h4>
-				<h4><span class="duration">Acquired by Microsoft in 2012</span></h4>
-				<div class="description">
-					<p>
-						Yammer is a workplace communication platform that has been described as a 
-						private Facebook for your company. I joined at a time when they had no mobile
-						team or vision to speak of. In a few months time, I designed and created 
-						their iPhone app and soon after the iPad app. These became the basis for the
-						apps developed by the Android team which I also lead.
-					</p>
-					<ul>
-						<li>Designed and developed iPhone app in 3 months</li>
-						<li>2 months later delivered an iPad app</li>
-						<li>Built iOS and Android development teams</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	<h2>Available For</h2>
-	<section>
-		<p>
-			Though I am currently the CTO of Bread, I am enthusiastic to help young companies and 
-			entrepreneurs get their businesses started. I am also available for speaking engagements
-			and training in engineering and business leadership.
-		</p>
-		<ul>
-			<li>Advisory roles at startups</li>
-			<li>Speaking engagements</li>
-			<li>Team mentorship</li>
-			<li>Cryptocurrency meetups</li>
-		</ul>
-	</section>
+<header>
+    <div class="portrait"><img src="/alaska.jpg"></div>
+    <div class="name-title">
+        <h1>Samuel Sutch</h1>
+        <h2>Technology Leader and Generalist</h2>
+    </div>
+</header>
+<section class="social-media">
+    <a href="https://twitter.com/samuelsutch" target="_blank">
+        <img src="/iconmonstr-twitter-3.svg">
+    </a>
+    <a href="https://github.com/samuraisam" target="_blank">
+        <img src="/iconmonstr-github-3.svg">
+    </a>
+    <a href="https://linkedin.com/in/ssutch" target="_blank">
+        <img src="/iconmonstr-linkedin-3.svg">
+    </a>
+</section>
+<h2>About</h2>
+<section class="intro">
+    <p>
+        Welcome! You've reached my personal page where I hope to describe who I
+        am and what makes me tick.
+    </p>
 
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <p>
+        For the past 15 years I've focused on
+        bringing life-changing mobile experiences to people through my extensive programming
+        experience and leadership skills. Most recently I've been focused on defining products
+        and building world-class teams as the CTO of various companies.
+    </p>
+</section>
+<h2>Recent Projects</h2>
+<section class="experience">
+    <div class="role">
+        <div class="logo">
+            <img src="/brd-logo.png">
+        </div>
+        <div class="details">
+            <h3><a href="https://breadwallet.com" target="_blank">BRD (Breadwinner AG)</a></h3>
+            <h4>CTO <span class="duration">September 2015-Current</span></h4>
+            <div class="description">
+                <p>
+                    Bread AG (formerlly breadwallet LLC) is a cryptocurrency startup.
+                    As CTO, I am responsible for carrying out the product vision for the company.
+                </p>
+                <ul>
+                    <li>Building out the engineering team. Currently 9 strong</li>
+                    <li>Defining and executing the technolgy roadmap</li>
+                    <li>Providing useful business metrics and telemetry data</li>
+                    <li>Manage security for 100s of millions of dollars of bitcoin</li>
+                </ul>
+                <p>
+                    As the first senior engineer at the company, I was tasked with defining our
+                    technology stack for years to come. For Bread's infrastructure I chose a swarm
+                    of microservices written in Go and hosted on GKE (Google Kubernetes Engine).
+                    For our frontend technolgy I managed the development of iOS and Android native
+                    apps, and created an in-house HTML5 platform which dramatically
+                    improved our turn around time for high-iteration products like our exchange product.
+                </p>
+                <ul>
+                    <li>Built out a HTML5 platform that allows for live app updates</li>
+                    <li>Stable and secure backend infrastructure with 9-second deploys to production</li>
+                    <li>Fast developer on-boarding, everyone makes a commit their first day</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="role">
+        <div class="logo">
+            <img src="/making-friends.png">
+        </div>
+        <div class="details">
+            <h3><a href="http://makingfriendsapp.com" target="_blank">Making Friends Inc.</a></h3>
+            <h4>Co-Founder, CTO <span class="duration">March 2013-September 2015</span></h4>
+            <h4><span class="duration">Acqui-hired in 2015</span></h4>
+            <div class="description">
+                <p>
+                    Making Friends' mission was to dramatically improve the quality and effectiveness
+                    of autism care services. We started in 2013 with an iPad game focused on teaching
+                    social skills to kids on the medium-high autistic spectrum. In 2014 we pivoted
+                    into a patient management platform as we learned more about the space. In 2015 our
+                    staff and product was acquired by Nightingale.
+                </p>
+                <ul>
+                    <li>Lead development of mobile iPad game</li>
+                    <li>Created highly configurable patient management platform with dynamic content types,
+                        governed by a dynamic roles and permissions system
+                    </li>
+                    <li>Majority investor, providing funding for development, business, marketing, and legal</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="role">
+        <div class="logo">
+            <img src="/lightt-logo.png">
+        </div>
+        <div class="details">
+            <h3>Lightt Inc</h3>
+            <h4>Co-Founder, CTO <span class="duration">May 2011-March 2013</span></h4>
+            <h4><span class="duration">Acquired by Mitu in 2014</span></h4>
+            <div class="description">
+                <p>
+                    Lightt began as the manifestation of my desire to create a moving,
+                    daily portrait of mine and my friends life. In a way, it is sort of the
+                    ancestor to Snapchat and Instagram Stories. It was a video capture
+                    and consuption application that allowed you to capture short segments
+                    that became part of an infite timeline you could jump into at any time.
+                </p>
+                <p>
+                    It was acquired in 2014 and shuttered in 2015. You can still
+                    <a href="https://www.youtube.com/watch?v=a-sekZYj1oo">see videos of it youtube.</a>
+                <ul>
+                    <li>Product creation and vision from the beginning</li>
+                    <li>Raised a $1M seed round on MVP</li>
+                    <li>Built an engineering and product team</li>
+                    <li>Flawless day-1 launch with hundreds-of-thousands of downloads</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="role">
+        <div class="logo">
+            <img src="/steamboat-logo.png">
+        </div>
+        <div class="details">
+            <h3>Steamboat Labs LLC</h3>
+            <h4>Founder, CEO <span class="duration">Feb 2013-June 2016</span></h4>
+            <div class="description">
+                <p>
+                    Steamboat Labs is a technology botique specializing in building MVP products for
+                    entrepreneurs. We've built companies that started as sketches on bar napkins as well
+                    as provided mission-critical technology for Fortune 50 companies, and nearly
+                    everything in-between.
+                </p>
+                <ul>
+                    <li>Booked over US $1M/yr in business</li>
+                    <li>Notable clients include Intel, Microsoft, and Google, among many others</li>
+                    <li>Defining product, and hiring teams for startups</li>
+                    <li>Built MVPs for many well-known products and companies</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="role">
+        <div class="logo">
+            <img src="/yammer-logo.png">
+        </div>
+        <div class="details">
+            <h3><a href="https://yammer.com" target="_blank">Yammer Inc.</a></h3>
+            <h4>Lead Mobile Engineer <span class="duration">May 2010-June 2011</span></h4>
+            <h4><span class="duration">Acquired by Microsoft in 2012</span></h4>
+            <div class="description">
+                <p>
+                    Yammer is a workplace communication platform that has been described as a
+                    private Facebook for your company. I joined at a time when they had no mobile
+                    team or vision to speak of. In a few months time, I designed and created
+                    their iPhone app and soon after the iPad app. These became the basis for the
+                    apps developed by the Android team which I also lead.
+                </p>
+                <ul>
+                    <li>Designed and developed iPhone app in 3 months</li>
+                    <li>2 months later delivered an iPad app</li>
+                    <li>Built iOS and Android development teams</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-  ga('create', 'UA-104302563-1', 'auto');
-  ga('send', 'pageview');
+    <div class="history">
+        <span class="bar">&nbsp;</span><h4>Ancient History</h4><span class="bar">&nbsp;</span>
+    </div>
 
-	</script>
+    <div class="role">
+        <div class="details nologo">
+            <h3>AlterTap Software</h3>
+            <h4>Founder, Principal Engineer <span class="duration">May 2009 - Feb 2012</span></h4>
+            <div class="description">
+                <p>
+                    Started as a mobile consultancy with <a href="https://www.linkedin.com/in/aaronvoisine/">Aaron
+                    Voisine,</a>
+                    and ultimately created and launched several of our own products. The most notable was an early
+                    mobile Craigslist client called Craigsfish. I made a fun promotional video with some friends I
+                    from film school which can still be <a href="https://www.youtube.com/watch?v=77G_ZTFrOX8">seen
+                    online.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="details nologo">
+            <h3>RF.com</h3>
+            <h4>Product Engineer <span class="duration">Jun 2008 - Jun 2009</span></h4>
+            <div class="description">
+                <p>
+                    Joined as a Django (Python) web developer and roles evolved to include mobile web
+                    and eventually, once the iOS API was released, mobile native developer. We were primarily
+                    building mobile telephony, focused on creating a SIP stack that could be deployed on
+                    demand for customers globally.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="role">
+        <div class="details nologo">
+            <h3>Montana Plan Exchange</h3>
+            <h4>Software Engineer <span class="duration">Jun 2004 - Aug 2007</span></h4>
+            <div class="description">
+                This was my first software engineering job. It didn't start out that way, I started out
+                running copiers and blueprint machines for contractors in the plan room. The owners
+                of the business wanted to digitize the plan exchange (a way for contractors to bid on
+                projects that interest them) and I volunteered to help. This turned out to be a great
+                project and there are now several successful companies that offer this server as a SaaS
+                product.
+            </div>
+        </div>
+    </div>
+</section>
+<h2>Available For</h2>
+<section>
+    <p>
+        Though I am currently the CTO of Bread, I am enthusiastic to help young companies and
+        entrepreneurs get their businesses started. I am also available for speaking engagements
+        and training in engineering and business leadership.
+    </p>
+    <ul>
+        <li>Advisory roles at startups</li>
+        <li>Speaking engagements</li>
+        <li>Team mentorship</li>
+        <li>Cryptocurrency meetups</li>
+    </ul>
+</section>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-104302563-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 </body>
 </html>
