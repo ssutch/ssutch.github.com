@@ -1,182 +1,9 @@
-<html>
+<html lang="en">
 <head>
     <title>Samuel Sutch</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <style>
-        * {
-            font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        p, ul {
-            margin-bottom: 15px;
-        }
-
-        ul li {
-            margin-left: 20px;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-            font-weight: bold;
-            border-bottom: 1px solid transparent;
-        }
-
-        a:hover {
-            border-bottom: 1px solid black;
-        }
-
-        a:after {
-            display: inline-block;
-            content: ' ';
-            background-image: url('./iconmonstr-arrow-3.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 2.5ex;
-            width: 2.5ex;
-            background-size: 2ex;
-            margin-left: 1pt;
-            vertical-align: text-bottom;
-        }
-
-        body {
-            max-width: 800px;
-            margin: 25px auto;
-        }
-
-        body > * {
-            padding: 0 25px;
-        }
-
-        header {
-            display: flex;
-            height: 100px;
-        }
-
-        header .portrait {
-            display: flex;
-            align-items: center;
-        }
-
-        header .portrait img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
-            border: 1px solid rgba(0,0,0,0.2);
-        }
-
-        header .name-title {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-left: 25px;
-        }
-
-        header .name-title h1 {
-            font-weight: 100;
-        }
-
-        header .name-title h2 {
-            font-weight: 100;
-            font-size: 1em;
-        }
-
-        .role {
-            display: flex;
-            margin-bottom: 15px;
-        }
-
-        .role .logo {
-            width: 100px;
-            padding-top: 12px;
-        }
-
-        .role .logo img {
-            max-width: 100px;
-        }
-
-        .role .details {
-            margin-left: 25px;
-        }
-
-        .role .details.nologo {
-            margin-left: 125px;
-        }
-
-        section + h2, header + h2 {
-            margin: 25px 0;
-        }
-
-        .role .details > * {
-            margin-bottom: 5px;
-        }
-
-        .role .details h4 {
-            font-weight: 800;
-        }
-
-        .role .details .duration {
-            font-weight: 100;
-            font-style: italic;
-            font-size: .85em;
-        }
-
-        .social-media {
-            margin-top: 25px;
-            margin-left: -10px;
-        }
-
-        .social-media a {
-            display: inline-block;
-            margin-left: 10px;
-        }
-
-        .social-media a:after {
-            display: inline;
-            background: none;
-            content: '';
-        }
-
-        .history {
-            display: flex;
-            flex-direction: row;
-            margin: 15px 0;
-        }
-
-        .history .bar {
-            background: rgba(0,0,0,.2);
-            height: 1px;
-            flex-grow: 1;
-            margin: 1.1ex 0;
-        }
-
-        .history h4 {
-            margin: 0 2ex;
-        }
-
-        @media only screen and (max-width: 480px) {
-            .role {
-                flex-direction: column;
-            }
-
-            .role .logo {
-                margin-top: 5px;
-                margin-bottom: 15px;
-            }
-
-            .role .details {
-                margin-left: 0;
-            }
-
-            .role .details.nologo {
-                margin-left: 0;
-            }
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:site" content="@samuelsutch"/>
     <meta name="twitter:creator" content="@samuelsutch"/>
@@ -185,7 +12,7 @@
     <meta property="og:type" content="business"/>
     <meta property="og:description"
           content="Serial entrepreneur in mobile and cryptocurrency. Crafting life-changing mobile experiences for over a decade."/>
-    <meta property="og:image" content="http://sam.sutch.net/sam-sutch.jpg"/>
+    <meta property="og:image" content="http://sam.sutch.net/alaska.jpg"/>
 </head>
 <body>
 <header>
@@ -246,27 +73,24 @@
             <h4>CTO <span class="duration">September 2015-Current</span></h4>
             <div class="description">
                 <p>
-                    BRD is a cryptocurrency company which started as a mobile wallet but now encompasses many products.
+                    BRD is a financial technology company focused on the cryptocurrency and blockchain space.
                     As CTO, I am responsible for defining and carrying out the product vision for the company.
                 </p>
                 <ul>
-                    <li>Building out the engineering team. Started from just one but have grown to over 30.</li>
-                    <li>Defining and executing the technolgy roadmap</li>
-                    <li>Providing useful business metrics and telemetry data</li>
-                    <li>Manage security for 100s of millions of dollars of bitcoin</li>
+                    <li>Creating an engineering team from scratch, now at 30+ strong</li>
+                    <li>Defining the product roadmap and bringing new products to market</li>
+                    <li>Oversee the security of over 8 billion in customer funds</li>
                 </ul>
                 <p>
-                    As the first senior engineer at the company, I was tasked with defining our
-                    technology stack for years to come. For Bread's infrastructure I chose a swarm
-                    of microservices written in Go and hosted on GKE (Google Kubernetes Engine).
-                    For our frontend technolgy I managed the development of iOS and Android native
-                    apps, and created an in-house HTML5 platform which dramatically
-                    improved our turn around time for high-iteration products like our exchange product.
+                    In the over 5 years I have been at BRD we have seen incredible growth and expansion. From
+                    relatively humble beginnings as a simple Bitcoin wallet for iOS, the BRD portfolio is now much
+                    more diverse. Some of the highlights over the past 5+ years include.
                 </p>
                 <ul>
-                    <li>Built out a HTML5 platform that allows for live app updates</li>
-                    <li>Stable and secure backend infrastructure with 9-second deploys to production</li>
-                    <li>Fast developer on-boarding, everyone makes a commit their first day</li>
+                    <li>Brought our app to Android app with no compromise to customer security</li>
+                    <li>Designed and implemented monetization strategy for consumer mobile apps</li>
+                    <li>Raised $32M to fund the <a href="https://brd.com/rewards">BRD Rewards Program</a> in a ERC20 token offering.</li>
+                    <li>Launched <a href="https://blockset.com/">Blockset,</a> an enterprise blockchain data service</li>
                 </ul>
             </div>
         </div>

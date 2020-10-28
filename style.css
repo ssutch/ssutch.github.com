@@ -1,0 +1,172 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p, ul {
+    margin-bottom: 15px;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover {
+    border-bottom: 1px solid black;
+}
+
+a:after {
+    display: inline-block;
+    content: ' ';
+    background-image: url('./iconmonstr-arrow-3.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 2.5ex;
+    width: 2.5ex;
+    background-size: 2ex;
+    margin-left: 1pt;
+    vertical-align: text-bottom;
+}
+
+body {
+    max-width: 800px;
+    margin: 25px auto;
+}
+
+body > * {
+    padding: 0 25px;
+}
+
+header {
+    display: flex;
+    height: 100px;
+}
+
+header .portrait {
+    display: flex;
+    align-items: center;
+}
+
+header .portrait img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+header .name-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+header .name-title h1 {
+    font-weight: 100;
+}
+
+header .name-title h2 {
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.role {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.role .logo {
+    width: 100px;
+    padding-top: 12px;
+}
+
+.role .logo img {
+    max-width: 100px;
+}
+
+.role .details {
+    margin-left: 25px;
+}
+
+.role .details.nologo {
+    margin-left: 125px;
+}
+
+section + h2, header + h2 {
+    margin: 25px 0;
+}
+
+.role .details > * {
+    margin-bottom: 5px;
+}
+
+.role .details h4 {
+    font-weight: 800;
+}
+
+.role .details .duration {
+    font-weight: 100;
+    font-style: italic;
+    font-size: .85em;
+}
+
+.social-media {
+    margin-top: 25px;
+    margin-left: -10px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.social-media a:after {
+    display: inline;
+    background: none;
+    content: '';
+}
+
+.history {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+}
+
+.history .bar {
+    background: rgba(0,0,0,.2);
+    height: 1px;
+    flex-grow: 1;
+    margin: 1.1ex 0;
+}
+
+.history h4 {
+    margin: 0 2ex;
+}
+
+@media only screen and (max-width: 480px) {
+    .role {
+        flex-direction: column;
+    }
+
+    .role .logo {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .role .details {
+        margin-left: 0;
+    }
+
+    .role .details.nologo {
+        margin-left: 0;
+    }
+}
