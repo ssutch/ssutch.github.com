@@ -70,7 +70,7 @@ header .name-title h2 {
 
 .role {
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .role .logo {
@@ -108,19 +108,31 @@ section + h2, header + h2 {
     font-size: .85em;
 }
 
-.social-media {
+.ext-links {
     margin-top: 25px;
     margin-left: -10px;
+    display: flex;
+    flex-direction: row;
 }
 
-.social-media a {
-    display: inline-block;
+.ext-links a {
+    display: block;
     margin-left: 10px;
     border-bottom: none;
 }
 
-.social-media a:hover {
+.ext-links a:hover {
     border-bottom: none;
+}
+
+.resume-btn {
+    background-color: black;
+    color: white;
+    padding: 0 6px;
+    height: 24px;
+    border-radius: 4px;
+    line-height: 24px;
+    font-size: 12px;
 }
 
 .history {
@@ -143,22 +155,7 @@ section + h2, header + h2 {
 }
 
 .section-header {
-    display: flex;
-    flex-direction: row;
     margin: 35px 0 35px 0;
-    align-items: center;
-    justify-content: center;
-}
-
-.section-header .bar {
-    /*background: rgba(0,0,0,.1);*/
-    height: 1px;
-    flex-grow: 1;
-    margin: 1.1ex 0;
-}
-
-.section-header h2 {
-    margin: 0 2ex 0 0;
 }
 
 footer {
@@ -172,7 +169,7 @@ footer {
     padding-top: 50px;
 }
 
-footer .social-media {
+footer .ext-links {
     text-align: center;
     margin-bottom: 35px;
 }
@@ -208,6 +205,10 @@ footer .contact-btn::after {
     vertical-align: text-bottom;
 }
 
+footer .ext-links {
+    justify-content: center;
+}
+
 @media only screen and (max-width: 480px) {
     .role {
         flex-direction: column;
@@ -224,5 +225,29 @@ footer .contact-btn::after {
 
     .role .details.nologo {
         margin-left: 0;
+    }
+}
+
+@media print {
+    .ext-links {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    @page {
+        margin: 0;
+    }
+
+    .container {
+        padding: 2cm;
+    }
+
+    .section-header {
+        margin-top: 35pt;
+        break-before: page;
+    }
+    .role, .details, .description, .role p {
+        break-inside: avoid-page;
     }
 }
