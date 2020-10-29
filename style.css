@@ -23,28 +23,14 @@ a:hover {
     border-bottom: 1px solid black;
 }
 
-/*
-a:after {
-    display: inline-block;
-    content: ' ';
-    background-image: url('./iconmonstr-arrow-3.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 2.5ex;
-    width: 2.5ex;
-    background-size: 2ex;
-    margin-left: 1pt;
-    vertical-align: text-bottom;
-}
-*/
 
-body {
+div.container {
     max-width: 800px;
     margin: 25px auto;
     padding-bottom: 50px;
 }
 
-body > * {
+div.container > * {
     padding: 0 25px;
 }
 
@@ -174,6 +160,53 @@ section + h2, header + h2 {
 
 .section-header h2 {
     margin: 0 2ex 0 0;
+}
+
+footer {
+    min-height: 550px;
+    background-image: url("./south-sister.jpg");
+    background-position: right;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    padding-top: 50px;
+}
+
+footer .social-media {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+footer .contact-btn {
+    display: inline-block;
+    font-size: 2em;
+    background-color: rgba(1,1,1,.8);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+    border-radius: 30px;
+    padding: .5em;
+    color: white;
+}
+
+footer a {
+    border-bottom: none;
+}
+
+footer a:hover {
+    border-bottom: none;
+}
+
+footer .contact-btn::after {
+    display: inline-block;
+    content: ' ';
+    background-image: url('./iconmonstr-arrow-3.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 2.5ex;
+    width: 2.5ex;
+    background-size: 2ex;
+    margin-left: 6pt;
+    vertical-align: text-bottom;
 }
 
 @media only screen and (max-width: 480px) {
