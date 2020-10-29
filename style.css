@@ -164,7 +164,7 @@ footer {
     background-position: right;
     background-size: cover;
     position: relative;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     padding-top: 50px;
 }
