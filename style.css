@@ -16,13 +16,14 @@ a {
     color: inherit;
     text-decoration: none;
     font-weight: bold;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid rgba(0,0,0,.2);
 }
 
 a:hover {
     border-bottom: 1px solid black;
 }
 
+/*
 a:after {
     display: inline-block;
     content: ' ';
@@ -35,10 +36,12 @@ a:after {
     margin-left: 1pt;
     vertical-align: text-bottom;
 }
+*/
 
 body {
     max-width: 800px;
     margin: 25px auto;
+    padding-bottom: 50px;
 }
 
 body > * {
@@ -139,6 +142,8 @@ section + h2, header + h2 {
     display: flex;
     flex-direction: row;
     margin: 15px 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .history .bar {
@@ -150,6 +155,25 @@ section + h2, header + h2 {
 
 .history h4 {
     margin: 0 2ex;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: row;
+    margin: 35px 0 25px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-header .bar {
+    background: rgba(0,0,0,.1);
+    height: 1px;
+    flex-grow: 1;
+    margin: 1.1ex 0;
+}
+
+.section-header h2 {
+    margin: 0 2ex 0 0;
 }
 
 @media only screen and (max-width: 480px) {
