@@ -116,12 +116,11 @@ section + h2, header + h2 {
 .social-media a {
     display: inline-block;
     margin-left: 10px;
+    border-bottom: none;
 }
 
-.social-media a:after {
-    display: inline;
-    background: none;
-    content: '';
+.social-media a:hover {
+    border-bottom: none;
 }
 
 .history {
